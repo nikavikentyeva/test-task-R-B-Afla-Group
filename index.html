@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+<div class="license__container">
+
+  <form method="get" action="https://nikavikentyeva.ru">
+
+    <ul class="license__list">
+      <li class="license__item">
+        <input class="license__radio" type="radio" name="license-plan" id="license__radio-1" data-plan="1" value="1">
+        <label class="license__plan" for="license__radio-1">license plan #1</label>
+        <div class="license__price" data-price="13">$13 per license</div>
+      </li>
+
+
+      <li class="license__item">
+        <input class="license__radio" type="radio" name="license-plan" id="license__radio-2" data-plan="2" value="2">
+        <label class="license__plan" for="license__radio-2">license plan #2</label>
+        <div class="license__price" data-price="22">$22 per license</div>
+      </li>
+
+
+      <li class="license__item">
+        <input class="license__radio" type="radio" name="license-plan" id="license__radio-3" data-plan="3" value="3">
+        <label class="license__plan" for="license__radio-3">license plan #3</label>
+        <div class="license__price" data-price="34">$34 per license</div>
+      </li>
+    </ul>
+    <hr>
+
+    <div class="license__number">
+      <div class="license__number-text">Number of licenses:</div>
+      <div class="license__select">
+        <label>
+          <select id="select" name="number-of-licenses">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <hr>
+    <div class="license__bottom">
+      <div class="license__total">Total: <span>$<span id="total">13</span><sup>us</sup></span></div>
+      <button type="submit" class="license__btn">Buy now</button>
+      <div class="license__number-plan">Selected plan: #<span id="selected-plan">1</span></div>
+    </div>
+
+  </form>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
